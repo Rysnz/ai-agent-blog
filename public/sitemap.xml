@@ -2,55 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yourusername.github.io/ai-agent-blog/categories/ai-agent/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
+    <loc>http://rysn.xyz/</loc>
+    <lastmod>2026-03-08T20:55:34+08:00</lastmod>
   </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
+    <loc>http://rysn.xyz/posts/final-test/</loc>
+    <lastmod>2026-03-08T20:55:34+08:00</lastmod>
   </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/categories/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
+    <loc>http://rysn.xyz/posts/</loc>
+    <lastmod>2026-03-08T20:55:34+08:00</lastmod>
   </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/rag/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
+    <loc>http://rysn.xyz/categories/</loc>
   </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/posts/rag-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/retrieval/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/vector-db/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/posts/</loc>
-    <lastmod>2026-03-07T12:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/ai-agent/</loc>
-    <lastmod>2026-03-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/posts/ai-agent-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2026-03-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/architecture/</loc>
-    <lastmod>2026-03-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/design-patterns/</loc>
-    <lastmod>2026-03-07T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/agent/</loc>
-    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/ai/</loc>
-    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/posts/ai-agent-%E6%A6%82%E8%A7%88/</loc>
-    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yourusername.github.io/ai-agent-blog/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
+    <loc>http://rysn.xyz/tags/</loc>
   </url>
 </urlset>

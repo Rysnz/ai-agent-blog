@@ -1,31 +1,19 @@
-baseURL = "https://yourusername.github.io/ai-agent-blog/"
+baseURL = "http://rysn.xyz/"
 title = "AI Agent 技术博客"
 languageCode = "zh-cn"
-theme = "simple-theme"
 enableRobotsTXT = true
 enableGitInfo = true
+enableShortcodes = true
+hasCJKLanguage = true
 
-# 简单主题配置
 [params]
-  author = "AI Agent"
+  author = "Rysn"
   description = "AI Agent 系统设计、模式与实践"
-  copyright = "AI Agent"
+  copyright = "© 2026 Rysn"
 
-# 数学公式支持
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineAnchors = ""
-    lineNoStart = 1
-    lineNumbersInTable = true
-    noClasses = false
     style = "monokai"
-    tabWidth = 2
-  [markup.goldmark.renderer]
-    unsafe = true
-
-# 输出格式（Hugo默认支持HTML、RSS）
-# outputs = { home = ["HTML", "RSS", "JSON"] }

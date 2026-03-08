@@ -1,19 +1,12 @@
-{{- define "main" -}}
+{{ define "main" }}
   <div class="container">
-    <div class="hero">
-      <h1>AI Agent 技术博客</h1>
-      <p class="subtitle">探索 AI Agent 系统设计、模式与实践</p>
-    </div>
-
-    <div class="content-grid">
-      {{- range .Pages }}
-        {{- if not .Params.hidden }}
-        <article class="content-card">
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          {{ .Description | markdownify }}
-        </article>
-        {{- end }}
-      {{- end }}
-    </div>
+    <h1>AI Agent 技术博客</h1>
+    <p>欢迎来到我的技术博客！</p>
+    <hr>
+    {{ range .RegularPages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Date.Format "2006-01-02" }}</p>
+      <p>{{ .Summary }}</p>
+    {{ end }}
   </div>
-{{- end -}}
+{{ end }}

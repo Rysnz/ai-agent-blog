@@ -2,74 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AI Agent 技术博客</title>
-    <link>https://yourusername.github.io/ai-agent-blog/tags/</link>
+    <link>http://rysn.xyz/tags/</link>
     <description>Recent content in Tags on AI Agent 技术博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Mar 2026 12:00:00 +0800</lastBuildDate>
-    <atom:link href="https://yourusername.github.io/ai-agent-blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>RAG</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/rag/</link>
-      <pubDate>Sat, 07 Mar 2026 12:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/rag/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Retrieval</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/retrieval/</link>
-      <pubDate>Sat, 07 Mar 2026 12:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/retrieval/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vector DB</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/vector-db/</link>
-      <pubDate>Sat, 07 Mar 2026 12:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/vector-db/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI Agent</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/ai-agent/</link>
-      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/ai-agent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/architecture/</link>
-      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/architecture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Design Patterns</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/design-patterns/</link>
-      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/design-patterns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Agent</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/agent/</link>
-      <pubDate>Sat, 07 Mar 2026 10:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/agent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/ai/</link>
-      <pubDate>Sat, 07 Mar 2026 10:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>系统设计</title>
-      <link>https://yourusername.github.io/ai-agent-blog/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Sat, 07 Mar 2026 10:00:00 +0800</pubDate>
-      <guid>https://yourusername.github.io/ai-agent-blog/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://rysn.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
