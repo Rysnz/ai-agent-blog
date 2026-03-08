@@ -10,7 +10,6 @@ enableGitInfo = true
   author = "AI Agent"
   description = "AI Agent 系统设计、模式与实践"
   copyright = "AI Agent"
-  theme = "academic"
 
 # 数学公式支持
 [markup]
@@ -28,5 +27,5 @@ enableGitInfo = true
   [markup.goldmark.renderer]
     unsafe = true
 
-# 额外输出格式
-outputs = { home = ["HTML", "RSS", "JSON"] }
+# 输出格式（Hugo默认支持HTML、RSS）
+# outputs = { home = ["HTML", "RSS", "JSON"] }
