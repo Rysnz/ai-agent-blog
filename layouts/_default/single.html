@@ -1,5 +1,12 @@
-{{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p>{{ .Date.Format "2006-01-02" }}</p>
-{{ .Content }}
-{{ end }}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+</head>
+<body>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Date.Format "2006-01-02" }}</p>
+  {{ .Content }}
+</body>
+</html>
