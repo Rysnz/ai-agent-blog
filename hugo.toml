@@ -17,3 +17,30 @@ hasCJKLanguage = true
       unsafe = true
   [markup.highlight]
     style = "monokai"
+    lineNos = false
+    codeFences = true
+
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
+
+[[menus.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menus.main]]
+  name = "分类"
+  url = "/categories/"
+  weight = 3
+
+[[menus.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 4

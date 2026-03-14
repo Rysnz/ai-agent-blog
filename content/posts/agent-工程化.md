@@ -2,6 +2,9 @@
 title: "Agent 工程化最佳实践"
 date: 2026-03-09T19:00:00+08:00
 draft: false
+tags: ["工程化", "最佳实践", "生产部署", "AI Agent"]
+categories: ["工程实践"]
+description: "如何构建可维护、可扩展、可靠的 AI Agent 系统，分享工程化核心原则和实践经验。"
 ---
 
 # Agent 工程化最佳实践

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "zh-CN" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  {{ if .IsPage }}<meta property="og:type" content="article">{{ end }}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "index.xml" | absURL }}">
+  {{ template "_internal/google_analytics.html" . }}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="{{ "/" | relURL }}">
+          <span class="logo-icon">🤖</span>
+          <span class="logo-text">{{ .Site.Title }}</span>
+        </a>
+        <button class="nav-toggle" aria-label="菜单" id="navToggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          {{ range .Site.Menus.main }}
+          <li class="nav-item">
+            <a class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>{{ .Site.Params.copyright | default (printf "© %d %s" now.Year .Site.Params.author) }}</p>
+      <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

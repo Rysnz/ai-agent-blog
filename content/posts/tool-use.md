@@ -2,6 +2,9 @@
 title: "Tool Use 与外部工具集成"
 date: 2026-03-09T20:30:00+08:00
 draft: false
+tags: ["Tool Use", "工具调用", "API", "AI Agent"]
+categories: ["AI Agent"]
+description: "深入探讨 AI Agent 的工具调用机制，包括工具定义、注册、执行和错误处理的最佳实践。"
 ---
 
 # Tool Use 与外部工具集成
