@@ -1,12 +1,66 @@
 {{ define "main" }}
-  <div class="container">
-    <h1>AI Agent 技术博客</h1>
-    <p>欢迎来到我的技术博客！</p>
-    <hr>
-    {{ range .RegularPages }}
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Date.Format "2006-01-02" }}</p>
-      <p>{{ .Summary }}</p>
-    {{ end }}
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">AI Agent 技术博客</h1>
+    <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+    <a href="{{ "/posts/" | relURL }}" class="hero-btn">浏览所有文章 →</a>
   </div>
+</div>
+
+<div class="home-container">
+  <section class="posts-section">
+    <h2 class="section-title">最新文章</h2>
+    <div class="post-list">
+      {{ $pages := where .Site.RegularPages "Section" "posts" }}
+      {{ range first 10 ($pages.ByDate.Reverse) }}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          {{ with .Params.categories }}
+          <span class="post-category">
+            {{ range first 1 . }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="post-summary">{{ .Summary | plainify | truncate 120 }}</p>
+        <div class="post-tags">
+          {{ range .Params.tags }}
+          <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>
+          {{ end }}
+        </div>
+        <a class="read-more" href="{{ .RelPermalink }}">阅读全文 →</a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3 class="widget-title">关于博客</h3>
+      <p class="widget-text">专注于 AI Agent 系统设计、工程实践与前沿探索，记录构建智能体系统的经验与思考。</p>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3 class="widget-title">文章分类</h3>
+      <ul class="category-list">
+        {{ range .Site.Taxonomies.categories.ByCount }}
+        <li>
+          <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+          <span class="count">{{ .Count }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3 class="widget-title">热门标签</h3>
+      <div class="tag-cloud">
+        {{ range .Site.Taxonomies.tags.ByCount }}
+        <a class="tag" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </aside>
+</div>
 {{ end }}

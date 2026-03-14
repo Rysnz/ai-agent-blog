@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="list-container">
+  <div class="list-main">
+    <header class="list-header">
+      <h1 class="list-title">
+        {{ if .IsHome }}最新文章
+        {{ else if eq .Kind "taxonomy" }}{{ .Title }}
+        {{ else if eq .Kind "term" }}#{{ .Title }}
+        {{ else }}{{ .Title }}
+        {{ end }}
+      </h1>
+      {{ with .Content }}<div class="list-description">{{ . }}</div>{{ end }}
+    </header>
+
+    <div class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          {{ with .Params.categories }}
+          <span class="post-category">
+            {{ range first 1 . }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="post-summary">{{ .Summary | plainify | truncate 120 }}</p>
+        <div class="post-tags">
+          {{ range .Params.tags }}
+          <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>
+          {{ end }}
+        </div>
+        <a class="read-more" href="{{ .RelPermalink }}">阅读全文 →</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

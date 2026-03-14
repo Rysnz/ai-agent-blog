@@ -2,6 +2,9 @@
 title: "RAG 在 Agent 系统中的应用"
 date: 2026-03-09T21:00:00+08:00
 draft: false
+tags: ["RAG", "检索增强", "向量检索", "AI Agent"]
+categories: ["AI Agent"]
+description: "介绍检索增强生成（RAG）在 AI Agent 系统中的核心应用，解决 LLM 知识更新和幻觉问题。"
 ---
 
 # RAG 在 Agent 系统中的应用

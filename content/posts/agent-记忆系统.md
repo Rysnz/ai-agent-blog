@@ -2,6 +2,9 @@
 title: "Agent 记忆系统设计"
 date: 2026-03-09T20:00:00+08:00
 draft: false
+tags: ["记忆系统", "向量数据库", "上下文管理", "AI Agent"]
+categories: ["AI Agent"]
+description: "深入探讨 AI Agent 记忆架构的设计，涵盖短期记忆、长期记忆和情节记忆的实现方案。"
 ---
 
 # Agent 记忆系统设计
